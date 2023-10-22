@@ -6,6 +6,7 @@ import Greeting from "./Components/Greeting"; // we don't need to wrap Greeting 
 import { Introduce } from "./Components/Introduce"; // we wrap {Introduce} in curly braces as we are exporting it as a named export
 import Counter from "./Components/Counter";
 import Clock from "./Components/Clock";
+import Form from "./Components/Form";
 
 class App extends React.Component {
   constructor(props) {
@@ -55,6 +56,8 @@ class App extends React.Component {
           <Introduce {...description} />
 
           <Counter name="Ian" />
+
+          <Form />
         </header>
       </div>
     );
