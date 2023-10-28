@@ -8,6 +8,8 @@ import Counter from "./Components/Counter";
 import Clock from "./Components/Clock";
 import Form from "./Components/Form";
 
+import BlogList from "./Components/BlogList";
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -58,6 +60,8 @@ class App extends React.Component {
           <Counter name="Ian" />
 
           <Form />
+
+          <BlogList />
         </header>
       </div>
     );
