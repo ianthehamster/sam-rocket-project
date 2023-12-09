@@ -1,14 +1,19 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
+import { useState } from "react";
 
 import Greeting from "./Components/Greeting"; // we don't need to wrap Greeting in {} as we are exporting it as a default export
 import { Introduce } from "./Components/Introduce"; // we wrap {Introduce} in curly braces as we are exporting it as a named export
 import Counter from "./Components/Counter";
 import Clock from "./Components/Clock";
 import Form from "./Components/Form";
+import HookCounter from "./Components/HookCounter";
+import HookClock from "./Components/HookClock";
 
 import BlogList from "./Components/BlogList";
+
+import CallApi from "./Components/CallApi";
 
 class App extends React.Component {
   constructor(props) {
@@ -63,6 +68,9 @@ class App extends React.Component {
 
           <BlogList />
         </header>
+        {/* <CallApi /> */}
+        <HookCounter />
+        <HookCounter name="Sam" />
       </div>
     );
   }

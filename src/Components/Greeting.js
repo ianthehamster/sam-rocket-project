@@ -2,10 +2,6 @@
 import React from "react"; // because we are using React.Component to have access to class-based features
 
 export default class Greeting extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     // we pass in firstName and lastName props to the JSX below
     const { firstName, lastName } = this.props;
